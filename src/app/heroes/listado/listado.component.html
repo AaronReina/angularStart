@@ -1,0 +1,13 @@
+<ul>
+  <div *ngFor="let e of heroes; let i = index">
+    <li>{{ i }}{{ e }}</li>
+    <button (click)="deleteHeroe(i)"></button>
+  </div>
+</ul>
+<div *ngIf="borrados.length > 0">
+  borrados
+
+  <div *ngFor="let e of borrados; let i = index">
+    <li>{{ e }}</li>
+  </div>
+</div>

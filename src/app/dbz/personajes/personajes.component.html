@@ -1,0 +1,9 @@
+<h3>Personajes</h3>
+<hr />
+<div *ngIf="personajes.length > 0">
+  <ul>
+    <li *ngFor="let element of personajes">
+      nombre: {{ element.nombre }} poder: {{ element.poder }}
+    </li>
+  </ul>
+</div>
